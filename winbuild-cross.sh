@@ -34,7 +34,7 @@ cp $MINGW_LIB/zlib1.dll bin/win/
 cp $MINGW_LIB/libwinpthread-1.dll bin/win/
 cp $GCC_MINGW_LIB/libstdc++-6.dll bin/win/
 cp $GCC_MINGW_LIB/libgcc_s_seh-1.dll bin/win/
-cp $LOCAL_LIB/openssl/libcrypto-1_1-x64.dll bin/win/
+cp $LOCAL_LIB/openssl/libcrypto-*-x64.dll bin/win/
 cp $LOCAL_LIB/curl/lib/.libs/libcurl-4.dll bin/win/
 
 
