@@ -71,7 +71,22 @@ $ make
 
 gmp:
 
+A. Native
 $ ./configure --host=x86_64-w64-mingw32
+$ make
+
+B. WSL2
+$ CC=x86_64-w64-mingw32-gcc \
+CC_FOR_BUILD=x86_64-linux-gnu-gcc \
+CPPFLAGS=-D__USE_MINGW_ANSI_STDIO \
+LDFLAGS="-static-libgcc -static-libstdc++" \
+./configure \
+--build=x86_64-linux-gnu \
+--host=x86_64-w64-mingw32 \
+--enable-fat \
+--enable-static \
+--disable-shared \
+--prefix=/home/claude/wintmp/
 $ make
 
 4. Tweak the environment.
