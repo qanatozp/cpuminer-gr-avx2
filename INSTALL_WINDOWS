@@ -85,7 +85,7 @@ LDFLAGS="-static-libgcc -static-libstdc++" \
 --host=x86_64-w64-mingw32 \
 --enable-fat \
 --enable-static \
---disable-shared \
+--disable-shared
 $ make
 
 4. Tweak the environment.
