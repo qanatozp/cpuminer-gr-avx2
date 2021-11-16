@@ -76,7 +76,6 @@ $ ./configure --host=x86_64-w64-mingw32
 $ make
 
 B. WSL2
-$ mkdir $HOME/wintmp
 $ CC=x86_64-w64-mingw32-gcc \
 CC_FOR_BUILD=x86_64-linux-gnu-gcc \
 CPPFLAGS=-D__USE_MINGW_ANSI_STDIO \
@@ -87,7 +86,6 @@ LDFLAGS="-static-libgcc -static-libstdc++" \
 --enable-fat \
 --enable-static \
 --disable-shared \
---prefix=$HOME/wintmp/
 $ make
 
 4. Tweak the environment.
